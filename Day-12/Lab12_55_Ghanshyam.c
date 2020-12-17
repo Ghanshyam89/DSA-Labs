@@ -53,17 +53,18 @@ int main()
     }
 
     int maximum = 0, item;
-    for(i = 0; i < K; i++)
+    for(i = 0; i < K-1; i++)
     {
         item = pop();
         if(maximum < item){
             maximum = item;
         }
     }
+    push(maximum);
     if(K>N)
         printf("-1");
     else
-        printf("%d", maximum);
+        printf("%d", peek());
     return 0;
 }
 void push(int item)                    //Inserting value into Stack.
