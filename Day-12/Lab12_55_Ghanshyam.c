@@ -60,7 +60,10 @@ int main()
             maximum = item;
         }
     }
-    printf("%d", maximum);
+    if(K>N)
+        printf("-1");
+    else
+        printf("%d", maximum);
     return 0;
 }
 void push(int item)                    //Inserting value into Stack.
