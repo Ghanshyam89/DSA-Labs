@@ -43,7 +43,7 @@ struct node* Insert( struct node* current, int data)
 
         printf("\nElement Inserted!\n");
     }
-    return current;
+
 }
 
 void InsertRoot(struct node* current, int data)
